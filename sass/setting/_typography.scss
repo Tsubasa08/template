@@ -1,6 +1,9 @@
 // フォントの定義
+html {
+	font-size: 62.5%;
+}
 
-$fz-base: 16px;
+$fz-base: 1.6rem;
 $ff-base: "Meiryo UI", "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", roboto, sans-serif;
 
 $ff-kgpw3: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans Japanese", sans-serif;

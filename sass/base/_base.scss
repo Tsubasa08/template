@@ -63,7 +63,7 @@ table {
 	border-spacing: 0;
 	width: 100%;
 	table-layout: fixed;
-	border: 1px solid $cr-table;
+	border: 1px solid $MainColor;
 }
 
 th,td {
@@ -249,9 +249,18 @@ select {
 .inner{
   margin: 0 auto;
   max-width: 100%;
-  width: 1100px;
 }
 
 .wrapper{
   overflow: hidden;
+}
+
+// 追加
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+a {
+	color: #333;
 }

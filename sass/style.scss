@@ -1,5 +1,12 @@
-@import "variables/**";
-@import "_mixin.scss";
-@import "_base.scss";
-@import "_module.scss";
-@import "block/**";
+/*================================
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+このCSSファイルはSassから生成されています。
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+================================*/
+
+@import "setting/**";
+@import "mixin/**";
+@import "base/**";
+@import "module/**";
+@import "page/**/*";
+

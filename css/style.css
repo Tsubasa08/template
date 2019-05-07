@@ -1,0 +1,356 @@
+/*================================
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+このCSSファイルはSassから生成されています。
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+================================*/
+
+.main-color {
+	color: #333;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/*
+    リセットCSS等の基本設定
+*/
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	background: #f7f7f7;
+	color: #333;
+	font-family: "Meiryo UI", "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", roboto, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+blockquote,
+code,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+iframe,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+	display: block;
+}
+
+li,
+ol {
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+table {
+	width: 100%;
+	border: 1px solid #333;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+}
+
+th,
+td {
+	padding: 4px 6px;
+	border: 1px solid #333;
+	text-align: left;
+	vertical-align: top;
+}
+
+input,
+textarea {
+	-webkit-appearance: none;
+	padding: 8px;
+	border: 1px solid #333;
+	border-radius: 0;
+	background-image: none;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input:focus,
+textarea:focus {
+	-webkit-box-shadow: none;
+	border: 1px solid #333;
+	outline: none;
+	box-shadow: none;
+}
+
+textarea {
+	resize: none;
+}
+
+input[type="submit"] {
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	border: none;
+	outline: none;
+}
+
+input[type="submit"] ::-moz-focus-inner {
+	padding: 0;
+	border: none;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + span {
+	display: inline-block;
+	position: relative;
+	margin: 0 0.2em 0;
+	padding: 0 0 0 1.2em;
+	cursor: pointer;
+}
+
+input[type="radio"] + span::before {
+	-webkit-transform: translateY(-50%);
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	transform: translateY(-50%);
+	border: 1px solid #333;
+	border-radius: 50%;
+	background: #fff;
+	content: "";
+}
+
+input[type="radio"] + span::after {
+	-webkit-transition: opacity 0.3s ease 0s;
+	opacity: 0;
+	transition: opacity 0.3s ease 0s;
+}
+
+input[type="radio"] + span:focus,
+input[type="radio"] + span:checked {
+	-webkit-box-shadow: none;
+	border: 1px solid #fff;
+	outline: none;
+	background: #333;
+	box-shadow: none;
+}
+
+input[type="radio"]:checked + span::after {
+	-webkit-transform: translateY(-50%);
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0.2em;
+	width: 0.6em;
+	height: 0.6em;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	background: #333;
+	content: "";
+	opacity: 1;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + span {
+	-webkit-transition: all 0.3s ease 0s;
+	display: inline-block;
+	position: relative;
+	margin: 0 0.2em 0;
+	padding: 0 0 0 1.2em;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+input[type="checkbox"] + span::before {
+	-webkit-transform: translateY(-50%);
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	transform: translateY(-50%);
+	border: 1px solid #333;
+	border-radius: 2px;
+	background: #fff;
+	content: "";
+}
+
+input[type="checkbox"] + span::after {
+	-webkit-transition: opacity 0.3s ease 0s;
+	opacity: 0;
+	transition: opacity 0.3s ease 0s;
+}
+
+input[type="checkbox"]:checked + span::after {
+	-webkit-transform: translateY(-50%) rotate(-45deg);
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 1em;
+	height: 0.6em;
+	margin-top: -0.2em;
+	transform: translateY(-50%) rotate(-45deg);
+	border-bottom: 3px solid #333;
+	border-left: 3px solid #333;
+	content: "";
+	opacity: 1;
+}
+
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	width: 100%;
+	padding: 8px 24px 8px 8px;
+	border: 1px solid #333;
+	border-radius: 0;
+	background-image: none;
+	font-family: inherit;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select:focus {
+	-webkit-box-shadow: none;
+	border: 1px solid #333;
+	outline: none;
+	box-shadow: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.inner {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+a {
+	color: #333;
+}
+
+/*
+    モジュール
+*/
+
+/*=================
+    example
+=================*/
+
+/*--- 共通のスタイル --- */
+
+/*--- 共通のスタイル end --- */
+
+/*=================
+    example end
+=================*/
+
+/*
+    footer
+*/
+
+/*
+    footer end
+*/
+
+/*
+    header
+*/
+
+/*
+    header end
+*/
+
