@@ -1,3 +1,4 @@
-$(function(){
-    
+$(function() {
+  // object-fit-imagesスクリプト
+  objectFitImages();
 });

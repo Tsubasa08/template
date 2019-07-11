@@ -17,7 +17,7 @@ var autoprefixer = require("autoprefixer");
 var cssdeclsort = require("css-declaration-sorter");
 
 var imageminOption = [
-  imageminPngquant({ quality: "65-80" }),
+  imageminPngquant({ quality: [0.65, 0.8]),
   imageminMozjpeg({ quality: 85 }),
   imagemin.gifsicle({
     interlaced: false,
