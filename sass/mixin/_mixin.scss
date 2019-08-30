@@ -72,3 +72,10 @@
   object-fit: contain;
   font-family: 'object-fit: contain;';
 }
+
+// 1行３点リーダー
+@mixin three_reader {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
