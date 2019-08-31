@@ -5,16 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <title>トップページのタイトルタグ</title>
-  <meta name="description" content="トップページのディスクリプション" />
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>" />
   <!--style css-->
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="<%= path %>/css/style.css" />
   <!--font-awesome-->
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
   <!--jquery-->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <!--object-fit-images-->
-  <script src="./js/ofi.min.js"></script>
+  <script src="<%= path %>/js/ofi.min.js"></script>
 </head>
 
 <body>
@@ -23,22 +23,3 @@
   <div class="inner"></div>
 </header>
 <!-- header end -->
-
-<!-- main -->
-<main class="main">
-  <div class="inner"></div>
-</main>
-<!-- main end -->
-
-<!-- footer -->
-<footer class="footer">
-  <div class="inner"></div>
-</footer>
-<!-- footer end -->
-
-<!-- script js-->
-<script src="./js/script.js"></script>
-
-</body>
-
-</html>
