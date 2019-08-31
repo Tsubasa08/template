@@ -16,6 +16,9 @@ var autoprefixer = require("autoprefixer");
 
 var cssdeclsort = require("css-declaration-sorter");
 
+var ejs = require("gulp-ejs");
+var rename = require("gulp-rename");
+
 var imageminOption = [
   imageminPngquant({ quality: [0.65, 0.8] }),
   imageminMozjpeg({ quality: 85 }),
@@ -51,7 +54,8 @@ gulp.task("sass", function() {
     .pipe(gulp.dest("./css"));
 });
 
-gulp.task("sass-watch", function() {
+gulp.task("watch", function() {
+  gulp.watch("./ejs/**/*.ejs", gulp.task("ejs"));
   gulp.watch("./sass/**/*.scss", gulp.task("sass"));
 });
 
@@ -77,7 +81,7 @@ gulp.task("file-watch", function() {
 
 gulp.task(
   "default",
-  gulp.series(gulp.parallel("browser-sync", "file-watch", "sass-watch"))
+  gulp.series(gulp.parallel("browser-sync", "file-watch", "watch"))
 );
 
 gulp.task("imagemin", function() {
@@ -85,4 +89,12 @@ gulp.task("imagemin", function() {
     .src("./img/base/*.{png,jpg,gif,svg}")
     .pipe(imagemin(imageminOption))
     .pipe(gulp.dest("./img"));
+});
+
+gulp.task("ejs", function() {
+  return gulp
+    .src(["ejs/**/*.ejs", "!ejs/**/_*.ejs"])
+    .pipe(ejs({}, {}, { ext: ".html" }))
+    .pipe(rename({ extname: ".html" }))
+    .pipe(gulp.dest("./"));
 });
