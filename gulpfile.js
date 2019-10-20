@@ -43,7 +43,6 @@ gulp.task("sass", function() {
     .pipe(
       postcss([
         autoprefixer({
-          browsers: ["last 2 versions", "ie >= 11", "Android >= 4"],
           grid: true,
           cascade: false
         })
@@ -76,6 +75,7 @@ gulp.task("bs-reload", function(done) {
 gulp.task("file-watch", function() {
   gulp.watch("**/*.html", gulp.task("bs-reload"));
   gulp.watch("./css/*.css", gulp.task("bs-reload"));
+  gulp.watch("./sass/**/*.scss", gulp.task("bs-reload"));
   gulp.watch("./js/*.js", gulp.task("bs-reload"));
 });
 
@@ -86,7 +86,7 @@ gulp.task(
 
 gulp.task("imagemin", function() {
   return gulp
-    .src("./img/base/*.{png,jpg,gif,svg}")
+    .src("./img/**/*")
     .pipe(imagemin(imageminOption))
     .pipe(gulp.dest("./img"));
 });

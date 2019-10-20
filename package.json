@@ -1,35 +1,40 @@
 {
-	"name": "package-template",
-	"version": "1.0.0",
-	"author": "haniwaman",
-	"license": "ISC",
-	"devDependencies": {
-		"autoprefixer": "^9.5.1",
-		"browser-sync": "^2.26.7",
-		"css-declaration-sorter": "^4.0.1",
-		"gulp": "^4.0.2",
-		"gulp-ejs": "^4.1.1",
-		"gulp-imagemin": "^5.0.3",
-		"gulp-merge-media-queries": "^0.2.1",
-		"gulp-notify": "^3.2.0",
-		"gulp-plumber": "^1.2.1",
-		"gulp-postcss": "^8.0.0",
-		"gulp-rename": "^1.4.0",
-		"gulp-sass": "^4.0.2",
-		"gulp-sass-glob": "^1.1.0",
-		"imagemin-mozjpeg": "^8.0.0",
-		"imagemin-pngquant": "^7.0.0",
-		"prettier": "^1.18.2",
-		"prettier-stylelint": "^0.4.2",
-		"stylelint": "^10.0.1",
-		"stylelint-config-recommended-scss": "^3.3.0",
-		"stylelint-config-wordpress": "^14.0.0",
-		"stylelint-scss": "^3.9.1"
-	},
-	"dependencies": {
-		"eslint-config-wordpress": "^2.0.0"
-	},
-	"scripts": {
-		"format": "prettier-stylelint --quiet --write ./css/style.css"
-	}
+  "name": "package-template",
+  "version": "1.0.0",
+  "author": "haniwaman",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.7",
+    "css-declaration-sorter": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^4.1.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "prettier": "^1.18.2",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-config-wordpress": "^14.0.0",
+    "stylelint-scss": "^3.9.1"
+  },
+  "dependencies": {
+    "eslint-config-wordpress": "^2.0.0"
+  },
+  "scripts": {
+    "format": "prettier-stylelint --quiet --write ./css/style.css"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 11",
+    "Android >= 4"
+  ]
 }
