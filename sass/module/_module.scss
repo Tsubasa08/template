@@ -1,3 +1,31 @@
 /*
     モジュール
 */
+// インデント
+.sp-indent {
+
+  @include media(tab-pc) {
+    display: none;
+  }
+}
+
+.tab-indent {
+
+  @include media(pc) {
+    display: none;
+  }
+}
+
+.sp-no-indent {
+
+  @include media(sp) {
+    display: none;
+  }
+}
+
+.tab-no-indent {
+
+  @include media(tab) {
+    display: none;
+  }
+}
