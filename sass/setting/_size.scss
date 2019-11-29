@@ -8,8 +8,8 @@ $pc-width: 1000px;
 $breakpoints: (
 	"sp": "screen and (max-width: 767px)",
 	"tab-pc": "screen and (min-width: 768px)",
-  "tab": "screen and (max-width: #{$pc-width - 1px})",
-  "pc": "screen and (min-width: #{$pc-width})",
+	"tab": "screen and (max-width: #{$pc-width - 1px})",
+	"pc": "screen and (min-width: #{$pc-width})"
 );
 
 // ヘッダー高さ
