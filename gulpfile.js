@@ -39,7 +39,12 @@ gulp.task("sass", function() {
       plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
     )
     .pipe(sassGlob())
-    .pipe(sass({ outputStyle: "expanded" }))
+    .pipe(
+      sass({
+      outputStyle: "expanded",
+      indentType: "space",
+      indentWidth: 2})
+    )
     .pipe(
       postcss([
         autoprefixer({
